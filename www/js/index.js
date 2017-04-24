@@ -17,7 +17,10 @@ $(document).on('deviceready', function() {
 	//alert("amplada física : " + amplada_pantalla); // -> 
 	//alert("alçada : " + alcada_pantalla_CSS);   // -> 360
 	//alert("amplada : " + amplada_pantalla_CSS); // -> 640
-		
+	
+	window.marcador_E = 0 ;
+	window.marcador_D = 0 ;
+	
      /////////////////////////////////////////////////////////
      
      // REDIMENSIONEM EL CANVAS
