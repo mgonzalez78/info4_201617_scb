@@ -24,6 +24,15 @@ $(document).on('deviceready', function() {
      /////////////////////////////////////////////////////////
      
      // REDIMENSIONEM EL CANVAS
+	var fons = document.getElemntByID('canvas_fons');
+	var ctx_fons = fons.getContext('2d');
+	
+	var imageObj = new Image();
+	imageObj.onload = function(); {
+		ctx_fons.drawImage(imageObj, 0, 0, 360, 640);
+	};
+	imageObj.src = 'img/pong_fons.png';
+	
      var canvas = document.getElementById('canvas');
      var ctx = canvas.getContext('2d');
      ctx.canvas.width  = window.innerWidth  ;
@@ -32,6 +41,9 @@ $(document).on('deviceready', function() {
 	// centre pantalla ?
 	var centre_x = amplada_pantalla_CSS / 2 ;
 	var centre_y = alcada_pantalla_CSS / 2 ;  // var centre_y = window.innerHeight / 2 ; //
+	window.centre_x = centre_x :
+	window.centre_y = centre_y ;
+	
 	
 	ctx.font="30px Verdana";
 	
